@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS string object example</h2>
+    <p id = "output"></p>
+    <script>
+        let text  = "Hello Javascript World";
+        //string properties
+        let length = text.length;
+        //using string methods
+        let upper = text.toUpperCase();
+        let lower = text.toLowerCase();
+        let trimmed = text.trim();
+        let sliced = text.slice(6,16);
+        let replaced = text.replace("World", "Programmers");
+        let charatpos = text.charAt(7);
+        let index = text.indexOf("Javascript");
+        let splitted = text.trim().split(" ");
+        document.getElementById("output").innerHTML =
+        "<b> Original string: </b>"+text+"<br>"+
+        "<b>Length: </b>"+length+"<br>"+
+        "<b>Uppercase: </b>"+upper+"<br>"+      
+        "<b>Lowercase: </b>"+lower+"<br>"+
+        "<b>Trimmed: </b>"+trimmed+"<br>"+
+        "<b>Sliced: </b>"+sliced+"<br>"+
+        "<b>Replaced: </b>"+replaced+"<br>"+
+        "<b>Character at position 7: </b>"+charatpos+"<br>"+
+        "<b>Index of 'Javascript': </b>"+index+"<br>"+
+        "<b>Splitted: </b>"+splitted.join(", ")+"<br>";
+
+</script>
+</body>
+</html>

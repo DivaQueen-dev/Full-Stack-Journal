@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+Java Script
+</title>
+<script src="script.js"></script>
+</heaad>
+<body>
+<h1>Wellcom to javascript Demo</h1>
+<button onclick="internalFuntion()">RUn internal Js</button>
+<button onclick="extenalFuntion()">RUn extenal Js</button>
+<scirpt>
+function internalFunction()
+{
+alert("Hello from internal JavaScript!");
+}
+</script>
+</body>

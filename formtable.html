@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+</head>
+<body bgcolor="greenyellow">
+    <center>
+        <!-- Main Table to hold form elements -->
+        <table border="1" style="background-color:white; width: 60%;" cellspacing="0" cellpadding="2">
+            <form>
+                <br><br><br><br><br><br>
+                <!-- Heading Row -->
+                <tr>
+                    <th colspan="2" style="text-align: center; font-size: 24px; color: red; width: 100%;">
+                        User Form -- (25B21CS042)
+                    </th>
+                </tr>
+
+                <!-- Name Field -->
+                
+
+
+
+
+
+                <tr>
+                    <td><label>Enter Name:</label></td>
+                    <td><input type="text" style="width: 95%;" required></td>
+                </tr>
+
+                <!-- Password Field -->
+                <tr>
+                    <td><label>Enter Password:</label></td>
+                    <td><input type="password" style="width: 95%;" required></td>
+                </tr>
+
+                <!-- Address Field -->
+                <tr>
+                    <td><label>Address:</label></td>
+                    <td><textarea style="width: 95%; height: 50px;"></textarea></td>
+                </tr>
+
+                <!-- Email Field -->
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="email" style="width: 95%;" required></td>
+                </tr>
+
+                <!-- Checkboxes for Games -->
+                <tr>
+                    <td><label>Select Games:</label></td>
+                    <td>
+                        <!-- Multiple choices can be selected here -->
+                        <input type="checkbox"><label> Hockey</label><br>
+                        <input type="checkbox"><label> Football</label><br>
+                        <input type="checkbox"><label> Badminton</label><br>
+                        <input type="checkbox"><label> Cricket</label><br>
+                        <input type="checkbox"><label> Volleyball</label>
+                    </td>
+                </tr>
+
+                <!-- Radio Buttons for Gender -->
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required><label> Male</label>
+                        <input type="radio" name="gender" value="female" required><label> Female</label>
+                    </td>
+                </tr>
+
+                
+
+
+                 <!-- Date of Birth Field -->
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+
+                <!-- Age Number Field -->
+                <tr>
+                    <td>Select Age:</td>
+                    <td><input type="number" name="age" min="10" max="100" required></td>
+                </tr>
+
+                <!-- Dropdown Menu for Courses -->
+                <tr>
+                    <td>Select Course:</td>
+                    <td>
+                        <!-- Drop-down list allows only one selection -->
+                        <select style="width:100%;">
+                            <option>---select---</option>
+                            <option>B.Tech</option>
+                            <option>M.Tech</option>
+                            <option>MBA</option>
+                            <option>BBA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- File Upload Option -->
+                <tr style="text-align: center;">
+                    <td colspan="2"><input type="file"></td>
+                </tr>
+
+                <!-- Buttons Row -->
+                <tr>
+                    <td colspan="2" style="text-align: center; padding: 5px;">
+                        <!-- Buttons for click, reset, and submit -->
+                        <button type="button" style="width: 33%; padding: 10px; border:none;">Click Me</button>
+                        <button type="reset" style="width: 33%; padding: 10px; border:none;">Reset</button>
+                        
+
+
+
+
+
+
+
+
+
+<button type="submit" style="width: 33%; padding: 10px; border:none;">Submit Form</button>
+                    </td>
+                </tr>
+           </form>
+        </table>
+    </center>
+ </body>
+</html>
+

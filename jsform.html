@@ -1,0 +1,133 @@
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>eligibility</title>
+
+</head>
+
+<style>
+
+    body {
+
+        font-family: Arial, sans-serif;
+
+        padding: 20px;
+
+    }
+
+
+
+    table {
+
+        border-collapse: collapse;
+
+        width: 50%;
+
+        margin-top: 20px;
+
+    }
+
+
+
+    th,
+
+    td {
+
+        border: 1px solid #333;
+
+        padding: 10px;
+
+        text-align: center;
+
+
+
+    }
+
+
+
+    th {
+
+        background-color: pink;
+
+    }
+
+</style>
+
+
+
+<body>
+
+    <h2> Voter Eligibility Checker</h2>
+
+    <button onclick="checkVoter()"> Check Eligibility </button>
+
+    <div id="result"></div>
+
+    <script>
+
+        function checkVoter() {
+
+            const name = prompt("Enter your name:");
+
+            const age = prompt("Enter your age:");
+
+            if (name == null || age == null || isNaN(age) || name.trim() === "" || isNaN(age)) {
+
+                alert("Invalid input.please try again");
+
+            }
+
+            const ageNum = parseInt(age);
+
+            const eligibility = ageNum >= 18 ? "Eligible to vote" : "Not Eligible to Vote";
+
+            const tableHTML = `
+
+    <table>
+
+        <tr>
+
+            <th>Name</th>
+
+            <th>Age</th>
+
+            <th>Eligibility </th>
+
+            </tr>
+
+            <tr>
+
+                <td>${name}</td>
+
+                <td>${ageNum}</td>
+
+                <td>${eligibility}</td>
+
+                </tr>
+
+            </table>`;
+
+            document.getElementById("result").innerHTML = tableHTML;
+
+
+
+
+
+               
+
+    }
+
+    </script>
+
+</body>
+
+
+
+</html>``

@@ -1,0 +1,15 @@
+/* External Stylesheet */
+body {
+    background-color: #f5f5f5;   /* Selector: body | Property: background-color | Value: #f5f5f5 */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;            /* Selector: h1 | Property: color | Value: darkblue */
+    text-align: center;
+}
+
+p {
+    color: green;               /* Selector: p | Property: color | Value: green */
+    font-size: 18px;
+}

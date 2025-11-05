@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Style Types Example</title>
+
+    <!-- External Style Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal Style -->
+    <style>
+        /* Internal Stylesheet */
+        .internal-style {
+            color: purple;             /* Selector: .internal-style (class selector) */
+            font-weight: bold;         /* Property: font-weight | Value: bold */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This heading will get its style from EXTERNAL CSS -->
+    <h1>Welcome to CSS Styling – (25B21CS042)</h1>
+    <!-- This paragraph uses EXTERNAL CSS styles -->
+    <p>This paragraph is styled using <b>external CSS</b>.</p>
+      <!-- This paragraph uses INTERNAL CSS styles -->
+    <p class="internal-style">This paragraph is styled using <b>internal CSS
+      </b>
+    </p>
+ <!-- This paragraph uses INLINE CSS styles -->
+   
+
+
+
+
+
+ <p style="color: red; font-size: 20px; text-decoration: underline;">
+        This paragraph is styled using <b>inline CSS</b>.
+  </p>
+</body>
+</html>

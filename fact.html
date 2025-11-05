@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>
+factorial 
+</title>
+</head>
+<body>
+<script>
+function factorial(num)
+{
+let fact =1 ;
+for ( let i=1 ; i<=num ; i++)
+{
+fact *=i;
+}
+return fact;
+}
+let number = parseInt(prompt("Enter a number:"));
+let result = factorial(number);
+document.write("Factorial of "+number+ "is" +result);
+</script>
+</body>
+</html>
+
